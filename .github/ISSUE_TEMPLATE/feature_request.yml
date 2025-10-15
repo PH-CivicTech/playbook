@@ -1,0 +1,44 @@
+name: ✨ Feature request
+description: Suggest a new feature or improvement
+labels: ["enhancement"]
+title: "[Feature]: "
+body:
+  - type: input
+    id: goal
+    attributes:
+      label: What’s the goal?
+      placeholder: "Enable offline form submissions for field workers"
+    validations:
+      required: true
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User story
+      placeholder: "As a barangay health worker, I want … so that …"
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - Given …
+        - When …
+        - Then …
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / out of scope
+      placeholder: "- In: …\n- Out: …"
+  - type: dropdown
+    id: sector
+    attributes:
+      label: Sector
+      options:
+        - sector:governance
+        - sector:education
+        - sector:healthcare
+        - sector:agriculture
+        - sector:disaster
+  - type: input
+    id: deps
+    attributes:
+      label: Dependencies / links

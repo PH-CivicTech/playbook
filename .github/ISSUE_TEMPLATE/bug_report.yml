@@ -1,0 +1,49 @@
+name: 🐛 Bug report
+description: File a bug to help us improve
+labels: ["bug"]
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill this out!"
+  - type: input
+    id: summary
+    attributes:
+      label: Brief summary
+      placeholder: "Save button doesn’t work on mobile"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. Observe …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / error logs
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "iOS 17 / Chrome 129 / Prod"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks
+      options:
+        - label: I searched existing issues
+          required: true

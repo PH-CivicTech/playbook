@@ -1,0 +1,37 @@
+name: 🏛️ Policy / Civic idea
+description: Propose a policy concept or civic improvement idea
+labels: ["idea","sector:governance"]
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      placeholder: "Residents lack real-time disaster alerts for flood-prone zones…"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      placeholder: "Build an SMS-first alert system integrated with LGU feeds…"
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact / beneficiaries
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation sketch (phases, stakeholders, data needed)
+  - type: dropdown
+    id: sector
+    attributes:
+      label: Sector
+      options:
+        - sector:governance
+        - sector:education
+        - sector:healthcare
+        - sector:agriculture
+        - sector:disaster
